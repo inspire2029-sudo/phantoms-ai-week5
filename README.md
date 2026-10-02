@@ -23,6 +23,10 @@
 
 النتائج الرقمية والـ plots الخاصة بالمقارنة موجودة داخل Notebook، وبتتغير بشكل بسيط حسب الـ run والـ device.
 
+### W5D3 — Deep Learning Debugging
+
+- `W5D3_DL_Debugging.md` — منهجية Debugging لمشكلة ثبات الـ Loss، مع فحص Learning Rate وNormalization وInput/Output Shapes وخطوات الإصلاح والاختبار.
+
 ## Task Status
 
 **Complete**
