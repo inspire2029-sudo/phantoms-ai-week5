@@ -17,7 +17,7 @@
 - `W5D1_First_Neural_Network_py.ipynb` — بداية تجربة MNIST.
 - `W5D2_—_Architecture_Choice_Machine_Learning_vs_Deep_Learning.ipynb` — تجربة اليوم الثاني.
 - `W5D4_W5D5_Dropout_Overfitting_Activations.ipynb` — تطبيقات اليوم الثالث.
-- `W5D3_CNN_RNN_Transformer.md` — الملخص النظري.
+- `W5D4_W5D5_CNN_RNN_Transformer.md` — الملخص النظري.
 
 ### ملاحظة
 
