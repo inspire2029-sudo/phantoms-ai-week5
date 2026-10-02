@@ -1,71 +1,30 @@
-# PHANTOMS AI — Week 5
+# PHANTOMS AI Team — Week 5
 
-## Neural Network Foundations with PyTorch
+## W5D3 — Dropout, Overfitting & Modern Architectures
 
-This repository contains my Week 5 work on building and evaluating a fully connected neural network with PyTorch.
+في اليوم الأخير من الأسبوع الخامس طبقت شوية تقنيات لتحسين تدريب الـ Neural Network على MNIST.
 
-## What I built
+### اللي اتعمل
 
-A feed-forward neural network for handwritten-digit classification using the MNIST dataset.
+- إضافة `Dropout(p=0.25)` ومقارنته بالموديل الأساسي.
+- رسم ومقارنة الـ Validation Loss.
+- تجربة `ReLU` مقابل `Sigmoid` ومقارنة سرعة التعلم من خلال الـ loss عبر الـ epochs.
+- كتابة ملخص بسيط عن الفرق بين CNN و RNN و Transformer.
+- تنظيم الملفات النهائية داخل الـ repository.
 
-Architecture:
+### الملفات
 
-`784 → 128 → 64 → 10`
+- `W5D1_First_Neural_Network_py.ipynb` — بداية تجربة MNIST.
+- `W5D2_—_Architecture_Choice_Machine_Learning_vs_Deep_Learning.ipynb` — تجربة اليوم الثاني.
+- `W5D3_Dropout_Overfitting_Activations.ipynb` — تطبيقات اليوم الثالث.
+- `W5D3_CNN_RNN_Transformer.md` — الملخص النظري.
 
-- `784` input values from a flattened 28×28 image
-- ReLU activation between hidden layers
-- `10` output classes for digits 0–9
-- Cross-entropy loss
-- Adam optimizer
+### ملاحظة
 
-## Workflow
+النتائج الرقمية والـ plots الخاصة بالمقارنة موجودة داخل Notebook، وبتتغير بشكل بسيط حسب الـ run والـ device.
 
-1. Load MNIST training/test datasets
-2. Convert images to tensors
-3. Batch data with DataLoader
-4. Build neural network
-5. Train with forward pass + backpropagation
-6. Evaluate on held-out test set
-7. Track loss and test accuracy
-8. Save trained model as `mnist_model.pth`
+## Task Status
 
-## Recorded run
+**Complete**
 
-- Training samples: 60,000
-- Test samples: 10,000
-- Epochs: 5
-- Batch size: 64
-- Learning rate: 0.001
-- Random seed: 42
-- Device: CPU
-- Final recorded test accuracy: 97.50%
-
-Test accuracy across five epochs:
-
-`94.82% → 96.55% → 96.98% → 97.21% → 97.50%`
-
-## Notebook
-
-`W5D1_First_Neural_Network_py.ipynb`
-
-## Tools
-
-Python · PyTorch · torchvision · Matplotlib
-
-## Reproducibility
-
-For a local Python environment:
-
-`pip install -r requirements.txt`
-
-The notebook sets a fixed random seed and selects CUDA automatically when available. The recorded run used CPU.
-
-Generated model files such as `*.pth` and local data are ignored by Git.
-
-## Learning direction
-
-This work builds the neural-network fundamentals needed to understand modern AI systems before moving deeper into **AI Security and LLM Red Teaming**.
-
-> Build it. Break it. Understand it. Document it.
-
-**Author:** Aya — inspire2029-sudo
+Week 5 is now complete. The work covered a first Neural Network, architecture choices, overfitting/regularization, activation functions, and an introduction to modern architectures.
